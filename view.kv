@@ -4,8 +4,8 @@ BoxLayout:
         id: button_box
     BoxLayout:
         Label:
-            text: app.total_price
+            text: str(app.total_price)  # Convert to string for display
         Button:
             text: "reset"
             background_color: (0, 1, 1, 1)
-            on_release: app.handle_reset_update()
+            on_release: app.handle_reset()

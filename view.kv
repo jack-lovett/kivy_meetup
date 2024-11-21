@@ -1,0 +1,10 @@
+BoxLayout:
+    orientation: "vertical"
+    BoxLayout:
+        id: button_box
+    BoxLayout:
+        Label:
+            text: app.total_price
+        Button:
+            text: "reset"
+            on_release: app.handle_reset_update()
